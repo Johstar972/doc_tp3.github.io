@@ -8,32 +8,32 @@ Dans les jeux un vecteur est utilisé pour stocker une position, une direction e
     ![image.png](img/image_0.png)
     
 
-La position du vecteur indique que le personnage se situe à 2 mètre (ou autre) vers la droite et 1 mètre vers le haut
+La position du vecteur indique que le personnage se situe à 2 mètres (ou autre) vers la droite et 1 mètre vers le haut.
 
-La vélocité montre qu’en 1 minute l’avion bouge de 3 (km) vers le haut et 2 km vers la gauche par rapport à l’origine
+La vélocité montre qu’en 1 minute l’avion bouge de 3 (km) vers le haut et 2 km vers la gauche par rapport à l’origine.
 
-La direction du vecteur montre que le pistolet est orienté vers la droite
+La direction du vecteur montre que le pistolet est orienté vers la droite.
 $\pagebreak$
 
 ### Addition de Vecteur
 
-- Pour additionner des vecteur entre eux, il suffit d’ajouter chaque composant (vecteur) entre eux séparément.
+- Pour additionner des vecteurs entre eux, il suffit d’ajouter chaque composant (vecteur) entre eux séparément.
     
 Par exemple : 
 
 (0, 1, 4) + (3, -2, 5) = (0 + 3, 1 - 2, 4 + 5) = (3, -1, 9)
 
-Prenons l’exemple de Mario. Il commence à la position (0, 0). Il décide de sauté donc on applique a sa position une vitesse de (1, 3). 
+Prenons l’exemple de Mario. Il commence à la position (0, 0). Il décide de sauter donc on applique à sa position une vitesse de (1, 3). 
 
 ![image.png](img/image_1.png)
 $\pagebreak$
 
-Une fois à la position (1,3) s’il n’y a pas de gravité/ frottement ou ce que vous voulez a appliquer sur l’accélération, Mario continuerai infiniment de monter de (1, 3) car la vitesse du vecteur resterai inchangé comme on peu le voir dans l’exemple ci dessous :
+Une fois à la position (1,3) s’il n’y a pas de gravité/frottement ou ce que vous voulez a appliquer sur l’accélération, Mario continuerai infiniment de monter de (1, 3) car la vitesse du vecteur resterai inchangé comme on peut le voir dans l’exemple ci-dessous :
 
 ![image.png](img/image_2.png)
 $\pagebreak$
 
-Tout au long du saut son accélération est de (0, -1) car la gravité le pousse vers le bas mais toujours vers la droite. C’est pourquoi la vitesse suivante de Mario se (1, 2) car on application a sa vitesse l’accélération soit $\rightarrow$ v + a = (1, 3) + (0, -1) = (1 + 0, 3 - 1) = (1, 2). et ainsi de suite a chaque frame.
+Tout au long du saut son accélération est de (0, -1) car la gravité le pousse vers le bas mais toujours vers la droite. C’est pourquoi la vitesse suivante de Mario se trouve en (1, 2) car on applique a sa vitesse l’accélération soit $\rightarrow$ v + a = (1, 3) + (0, -1) = (1 + 0, 3 - 1) = (1, 2) et ainsi de suite a chaque frame.
 
 ![image.png](img/image_3.png)
     
@@ -41,9 +41,9 @@ $\pagebreak$
 
 ### Soustraction de vecteur
 
-Les soustraction de vecteur fonctionne de la même manière que les additions et également par frame. 
+Les soustractions de vecteur fonctionnent de la même manière que les additions et également par frame. 
 
-La soustraction de vecteur est souvent utilisé pour trouver le vecteur d’une position vers une autre.
+La soustraction de vecteur est souvent utilisée pour trouver le vecteur d’une position vers une autre.
 
 Par exemple le joueur poster à la position (1, 2) avec le fusil laser et le robot situé en (4, 3) comme ci-dessous :
 
@@ -55,7 +55,7 @@ Pour retrouver le vecteur que le laser devra parcourir pour toucher le robot, on
 
 ### Vecteur scalaire multiplication
 
-Quand on parle de vecteur, on désigne les nombre seul ( individuel) en tant que scalaire. 
+Quand on parle de vecteur, on désigne les nombres seuls ( individuels) en tant que scalaire. 
 
 Par exemple :
 
@@ -73,7 +73,7 @@ Si le joueur a une vitesse de (10,20), la nouvelle vitesse sera :
 
 ### Longueur
 
-Si nous avons un bateau avec un vecteur dont la vitesse est (4,3), nous pourrions vouloir connaitre sa vitesse afin de calculer par exemple le niveau de tremblement de l’écran ou bien sa consommation en essence. Pour savoir cela nous avons besoin de la longueur du vecteur V. La longueur d’un vecteur s’écrit en utilisant ||, on notera donc la distance de V → |V|
+Si nous avons un bateau avec un vecteur dont la vitesse est (4,3), connaître sa vitesse nous permettrai de calculer par exemple le niveau de tremblement de l’écran ou bien sa consommation en essence. Pour savoir cela nous avons besoin de la longueur du vecteur V. La longueur d’un vecteur s’écrit en utilisant ||, on notera donc la distance de V → |V|
 
 On admettra que V est un triangle rectangle ( voir exemple ci-dessous) avec pour côté 4 et 3 et utiliser le théorème de Pythagore pour trouver l’hypoténuse *x^2^ + y^2^ = h^2^*
 
