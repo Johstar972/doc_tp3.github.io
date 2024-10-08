@@ -1,8 +1,8 @@
-SOURCES=index.md
+SOURCES=doc.md
 
 .PHONY: doc
 doc:
-	pandoc -s $(SOURCES) -o index.pdf --pdf-engine=pdflatex
+	pandoc -s $(SOURCES) -o doc.pdf --pdf-engine=pdflatex
 
 .PHONY: odt
 odt:
