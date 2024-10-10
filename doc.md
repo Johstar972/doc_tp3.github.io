@@ -1,4 +1,8 @@
-# Les vecteurs
+::: onlylatex
+\newpage
+:::
+
+# Introduction aux vecteurs
 
 Dans les jeux un vecteur est utilisé pour stocker une position, une direction et une vitesse dans un **espace donné**.
 
@@ -13,7 +17,11 @@ La position du vecteur indique que le personnage se situe à 2 mètres (ou autre
 La vélocité montre qu’en 1 minute l’avion bouge de 3 (km) vers le haut et 2 km vers la gauche par rapport à l’origine.
 
 La direction du vecteur montre que le pistolet est orienté vers la droite.
-$\pagebreak$
+
+::: onlylatex
+\pagebreak
+:::
+
 
 ### Addition de Vecteur
 
@@ -26,18 +34,29 @@ Par exemple :
 Prenons l’exemple de Mario. Il commence à la position (0, 0). Il décide de sauter donc on applique à sa position une vitesse de (1, 3). 
 
 ![image.png](img/image_1.png)
-$\pagebreak$
+
+::: onlylatex
+\pagebreak
+:::
+
 
 Une fois à la position (1,3) s’il n’y a pas de gravité/frottement ou ce que vous voulez a appliquer sur l’accélération, Mario continuerai infiniment de monter de (1, 3) car la vitesse du vecteur resterai inchangé comme on peut le voir dans l’exemple ci-dessous :
 
 ![image.png](img/image_2.png)
-$\pagebreak$
 
-Tout au long du saut son accélération est de (0, -1) car la gravité le pousse vers le bas mais toujours vers la droite. C’est pourquoi la vitesse suivante de Mario se trouve en (1, 2) car on applique a sa vitesse l’accélération soit $\rightarrow$ v + a = (1, 3) + (0, -1) = (1 + 0, 3 - 1) = (1, 2) et ainsi de suite a chaque frame.
+::: onlylatex
+\pagebreak
+:::
+
+
+Tout au long du saut son accélération est de (0, -1) car la gravité le pousse vers le bas mais toujours vers la droite. C’est pourquoi la vitesse suivante de Mario se trouve en (1, 2) car on applique a sa vitesse l’accélération soit --> v + a = (1, 3) + (0, -1) = (1 + 0, 3 - 1) = (1, 2) et ainsi de suite a chaque frame.
 
 ![image.png](img/image_3.png)
     
-$\pagebreak$
+::: onlylatex
+\pagebreak
+:::
+
 
 ### Soustraction de vecteur
 
@@ -69,6 +88,11 @@ Si le joueur a une vitesse de (10,20), la nouvelle vitesse sera :
 
 0.9 * (10, 20) = (0.9 * 10, 0.9 * 20) = (9, 18)
 
+::: onlylatex
+\pagebreak
+:::
+
+
 - *Une fois l’introduction aux vecteurs faites, certains outils fondamentaux, nous serons utiles pour travailler avec eux à savoir la longueur, la normalisation, la distance, le produit de points et le produit en croix. Une fois ces concepts assimilés et que des fonctions pour les utiliser seront écrite, la résolution de la plupart des problèmes vectoriels sera plus simple*
 
 ### Longueur
@@ -77,11 +101,11 @@ Si nous avons un bateau avec un vecteur dont la vitesse est (4,3), connaître sa
 
 On admettra que V est un triangle rectangle ( voir exemple ci-dessous) avec pour côté 4 et 3 et utiliser le théorème de Pythagore pour trouver l’hypoténuse *x^2^ + y^2^ = h^2^*
 
-Il s’agit de la longueur du vecteur H avec les composant (x, y) est $\sqrt{x^2 + y^2}$. 
+Il s’agit de la longueur du vecteur H avec les composant (x, y) est sqrt(x^2 + y^2). 
 
 Pour calculer la vitesse du bateau on utilise juste : 
 
-|V| = $\sqrt{4^2 + 3^2}$ = $\sqrt{(25)}$ = 5
+|V| = sqrt(4^2 + 3^2) = sqrt(25) = 5
 
 ![image.png](img/image_5.png)
 
@@ -89,7 +113,7 @@ Pour calculer la vitesse du bateau on utilise juste :
 
 Si le joueur P est en (3,3) et qu’il y a une explosion E en (1,2), nous avons besoin de trouver la distance entre le P et E pour voir combien de dommage le joueur prendra. Afin de trouver cela, il faudra combiner deux outils que l’on a déjà vu avant. la **soustraction** de vecteur et la **longueur. Il faut donc soustraire P-E pour trouver le vecteur entre eux et ensuite trouver la longueur de ce vecteur afin de récupérer la distance entre eux. L’ordre n’a pas d’importance ici, |E-P| nous donnera le même résultat.**
 
-**Distance** = |P-E| = |(3, 3) - (1, 2)| = $\sqrt{(2^2 + 1^2)}$ = $\sqrt{(5)}$ = 2,23
+**Distance** = |P-E| = |(3, 3) - (1, 2)| = sqrt(2^2 + 1^2) = sqrt(5) = 2,23
 
 ![image.png](img/image_6.png)
 
@@ -99,4 +123,4 @@ Lorsqu'il s'agit de la direction (par opposition à la position ou à la vitesse
 
 Un vecteur de longueur 1 est dit « normalisé ». Comment normaliser un vecteur (fixer sa longueur à 1) ? Il suffit de diviser chaque composante par la longueur du vecteur. Si nous voulons normaliser le vecteur V avec la composante (3,4), il suffit de diviser chaque composante par sa longueur, 5, pour obtenir (3/5, 4/5). Nous pouvons maintenant utiliser le théorème de Pythagore pour prouver que le vecteur a une longueur de 1 :
 
-$\frac{3}{5^2}$ + $\frac{4}{5^2}$ = $\frac{9}{25}$ + $\frac{16}{25}$ = $\frac{25}{25}$ =  1
+3/5^2 + 4/5^2 = 9/25 + 16/25 = 25/25 =  1
