@@ -9,7 +9,7 @@ Dans les jeux un vecteur est utilisé pour stocker une position, une direction e
 - Par exemple :
     
     
-    ![image.png](img/image_0.png)
+    ![exemple d'utilisation des vecteurs](img/image_0.png)
     
 
 La position du vecteur indique que le personnage se situe à 2 mètres (ou autre) vers la droite et 1 mètre vers le haut.
@@ -33,7 +33,7 @@ Par exemple :
 
 Prenons l’exemple de Mario. Il commence à la position (0, 0). Il décide de sauter donc on applique à sa position une vitesse de (1, 3). 
 
-![image.png](img/image_1.png)
+![exemple d'addition de vecteur](img/image_1.png)
 
 ::: onlylatex
 \pagebreak
@@ -42,7 +42,7 @@ Prenons l’exemple de Mario. Il commence à la position (0, 0). Il décide de s
 
 Une fois à la position (1,3) s’il n’y a pas de gravité/frottement ou ce que vous voulez a appliquer sur l’accélération, Mario continuerai infiniment de monter de (1, 3) car la vitesse du vecteur resterai inchangé comme on peut le voir dans l’exemple ci-dessous :
 
-![image.png](img/image_2.png)
+![exemple sans force de gravité/frottement](img/image_2.png)
 
 ::: onlylatex
 \pagebreak
@@ -51,7 +51,7 @@ Une fois à la position (1,3) s’il n’y a pas de gravité/frottement ou ce qu
 
 Tout au long du saut son accélération est de (0, -1) car la gravité le pousse vers le bas mais toujours vers la droite. C’est pourquoi la vitesse suivante de Mario se trouve en (1, 2) car on applique a sa vitesse l’accélération soit --> v + a = (1, 3) + (0, -1) = (1 + 0, 3 - 1) = (1, 2) et ainsi de suite a chaque frame.
 
-![image.png](img/image_3.png)
+![exemple d'addition de vecteur avec force de frottement/gravité](img/image_3.png)
     
 ::: onlylatex
 \pagebreak
@@ -66,7 +66,7 @@ La soustraction de vecteur est souvent utilisée pour trouver le vecteur d’une
 
 Par exemple le joueur poster à la position (1, 2) avec le fusil laser et le robot situé en (4, 3) comme ci-dessous :
 
-![image.png](img/image_4.png)
+![exemple de soustraction de vecteur](img/image_4.png)
 
 Pour retrouver le vecteur que le laser devra parcourir pour toucher le robot, on peut soustraire la position du joueur avec celle du robot.
 
@@ -101,21 +101,21 @@ Si nous avons un bateau avec un vecteur dont la vitesse est (4,3), connaître sa
 
 On admettra que V est un triangle rectangle ( voir exemple ci-dessous) avec pour côté 4 et 3 et utiliser le théorème de Pythagore pour trouver l’hypoténuse *x^2^ + y^2^ = h^2^*
 
-Il s’agit de la longueur du vecteur H avec les composant (x, y) est sqrt(x^2 + y^2). 
+Il s’agit de la longueur du vecteur H avec les composant (x, y) est sqrt(x^2^ + y^2^). 
 
 Pour calculer la vitesse du bateau on utilise juste : 
 
-|V| = sqrt(4^2 + 3^2) = sqrt(25) = 5
+|V| = sqrt(4^2^ + 3^2^) = sqrt(25) = 5
 
-![image.png](img/image_5.png)
+![exemple pour trouver la longueur d'un vecteur](img/image_5.png)
 
 ### Distance
 
 Si le joueur P est en (3,3) et qu’il y a une explosion E en (1,2), nous avons besoin de trouver la distance entre le P et E pour voir combien de dommage le joueur prendra. Afin de trouver cela, il faudra combiner deux outils que l’on a déjà vu avant. la **soustraction** de vecteur et la **longueur. Il faut donc soustraire P-E pour trouver le vecteur entre eux et ensuite trouver la longueur de ce vecteur afin de récupérer la distance entre eux. L’ordre n’a pas d’importance ici, |E-P| nous donnera le même résultat.**
 
-**Distance** = |P-E| = |(3, 3) - (1, 2)| = sqrt(2^2 + 1^2) = sqrt(5) = 2,23
+**Distance** = |P-E| = |(3, 3) - (1, 2)| = sqrt(2^2^ + 1^2^) = sqrt(5) = 2,23
 
-![image.png](img/image_6.png)
+![exemple pour trouver la distance d'un vecteur](img/image_6.png)
 
 ### Normalisation
 
@@ -123,4 +123,4 @@ Lorsqu'il s'agit de la direction (par opposition à la position ou à la vitesse
 
 Un vecteur de longueur 1 est dit « normalisé ». Comment normaliser un vecteur (fixer sa longueur à 1) ? Il suffit de diviser chaque composante par la longueur du vecteur. Si nous voulons normaliser le vecteur V avec la composante (3,4), il suffit de diviser chaque composante par sa longueur, 5, pour obtenir (3/5, 4/5). Nous pouvons maintenant utiliser le théorème de Pythagore pour prouver que le vecteur a une longueur de 1 :
 
-3/5^2 + 4/5^2 = 9/25 + 16/25 = 25/25 =  1
+3/5^2^ + 4/5^2^ = 9/25 + 16/25 = 25/25 =  1

@@ -1,16 +1,21 @@
 # Configuration du fichier YAML pour Pandoc
 title: "Les vecteurs dans les jeux vidéo"
 author: "PEZO Johan"
-toc: true  # Génère un sommaire
+toc: true  
+toc-depth: 3
 toc-title: "Table des matières"
 header-includes:
   - |
     \usepackage{fancyhdr}
-    \usepackage[a4paper,margin=2.5cm]{geometry}  
+    \usepackage[a4paper,margin=2.5cm]{geometry}
     \pagestyle{fancy}
     \fancyhead[L]{Pezo Johan}   
-    \fancyfoot[L]{R5.08 Qualité de développement Page \thepage} 
+    \fancyfoot[L]{R5.08 Qualité de développement}
+    \fancyfoot[C]{Page \thepage}
+    \fancyfoot[R]{}
   - |
     \usepackage{etoolbox}
+    \pagenumbering{arabic}
+
 after-body: |
   \newpage

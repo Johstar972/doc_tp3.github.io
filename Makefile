@@ -11,7 +11,7 @@ odt:
 
 .PHONY: html
 html:
-	pandoc -s $(SOURCES) --mathjax -f markdown -t html -o index.html --metadata-file=$(CONFIG) --template=template.html
+	pandoc --toc --toc-depth=3 -s $(SOURCES) --mathjax -f markdown -t html -o index.html --metadata-file=$(CONFIG) --css=styles.css
 
 clean:
 	rm *.pdf *.odt *.html
